@@ -1,0 +1,4 @@
+baseURL = 'https://blog.enutie.com/'
+languageCode = 'en-us'
+title = 'Enuties Blog'
+theme = "ananke"
