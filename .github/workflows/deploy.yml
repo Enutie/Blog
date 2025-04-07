@@ -40,7 +40,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2 # Using v2 for broader Hugo version support if needed
         with:
           hugo-version: 'latest' # Or specify a specific version like '0.119.0'
-          # extended: true # Uncomment if using Sass/SCSS in your theme/project
+          extended: true # Uncomment if using Sass/SCSS in your theme/project
 
       - name: Build
         run: hugo --minify # Build the site (--minify reduces file size)
