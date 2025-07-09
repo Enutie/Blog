@@ -1,19 +1,114 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Enuties Blog</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Enuties Blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 07 Apr 2025 22:46:20 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Mon, 07 Apr 2025 22:46:20 +0200</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is my first post post using &lt;strong&gt;Hugo&lt;/strong&gt; Isn&amp;rsquo;t it &lt;em&gt;cool&lt;/em&gt;?&lt;/p&gt;</description>
-    </item>
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Enuties Blog</title>
+        <link>http://localhost:1313/posts/</link>
+        <description>All Posts | Enuties Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>Enutie@gmail.com (Morten Dahl Pedersen)</managingEditor>
+            <webMaster>Enutie@gmail.com (Morten Dahl Pedersen)</webMaster><lastBuildDate>Fri, 13 Jun 2025 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>250 box challenge completed</title>
+    <link>http://localhost:1313/posts/250-box-challenge/</link>
+    <pubDate>Fri, 13 Jun 2025 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/posts/250-box-challenge/</guid>
+    <description><![CDATA[I am finally done with the 250 challenge, a process taking me 6 months to complete.]]></description>
+</item>
+<item>
+    <title>Draw a Box: Lesson 1 Complete!</title>
+    <link>http://localhost:1313/posts/draw-a-box-lesson-1-complete/</link>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/posts/draw-a-box-lesson-1-complete/</guid>
+    <description><![CDATA[I am finally done with Lesson 1 and I am ready to do the 250 box challenge!]]></description>
+</item>
+<item>
+    <title>My Art Learning Journey - Day 1: Studying Knight Character Design</title>
+    <link>http://localhost:1313/posts/first-sketch/</link>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/posts/first-sketch/</guid>
+    <description><![CDATA[<h1 id="starting-my-art-journey">Starting My Art Journey</h1>
+<p>As you probably know, I am following the Draw a Box course and they emphasize that you also draw for fun at the side, called <a href="https://drawabox.com/lesson/0/2/50percent" target="_blank" rel="noopener noreffer ">The 50 rule</a>. Today, I practiced by studying a beautiful character design by wu shenyou, a professional concept artist.</p>
+<h2 id="my-practice-attempt">My Practice Attempt</h2>
+<p></p>
+<p>This is my beginner attempt at studying the original artwork. I know I have a long way to go, but everyone starts somewhere!</p>]]></description>
+</item>
+<item>
+    <title>Lesson 1</title>
+    <link>http://localhost:1313/posts/drawing-lesson-1/</link>
+    <pubDate>Sun, 15 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/posts/drawing-lesson-1/</guid>
+    <description><![CDATA[<p><strong>Lesson 1 from Draw A Box</strong></p>
+<p>So here are the exercises and homework I have made so far in the first lesson of Draw A Box.</p>
+<h3 id="lines-homework">Lines Homework</h3>
+<ul>
+<li><strong>Superimposed Lines</strong> - Practice drawing confident, straight lines</li>
+<li><strong>Ghosted Lines</strong> - Using the ghosting method for accurate line placement</li>
+<li><strong>Ghosted Planes</strong> - Applying ghosting to create clean geometric shapes</li>
+</ul>
+<h3 id="ellipses-practice">Ellipses Practice</h3>
+<ul>
+<li><strong>Tables of Ellipses</strong> - Drawing confident ellipses in various orientations</li>
+<li><strong>Ellipses in Planes</strong> - Fitting ellipses within geometric constraints</li>
+<li><strong>Funnels</strong> - Creating ellipses that align along a central axis</li>
+</ul>
+<h3 id="box-construction">Box Construction</h3>
+<ul>
+<li><strong>Plotted Perspective</strong> - Drawing boxes using 2-point perspective with plotted vanishing points</li>
+<li><strong>Rough Perspective</strong> - Creating boxes in 1-point perspective without plotting</li>
+<li><strong>Rotated Boxes</strong> - Understanding how boxes rotate in 3D space</li>
+<li><strong>Organic Perspective</strong> - Drawing boxes at various angles and scales</li>
+</ul>
+<p><strong>Progress Update:</strong> Done with the exercises! Now I need to do the 250 box challenge!</p>]]></description>
+</item>
+<item>
+    <title>Game #1 Complete - Pong Clone</title>
+    <link>http://localhost:1313/posts/first-game/</link>
+    <pubDate>Sat, 14 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/posts/first-game/</guid>
+    <description><![CDATA[Taking the first step in the 20 Games Challenge by creating a Pong clone in Godot]]></description>
+</item>
+<item>
+    <title>Draw a Box: My First Steps into Drawing</title>
+    <link>http://localhost:1313/posts/draw-a-box/</link>
+    <pubDate>Thu, 12 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/posts/draw-a-box/</guid>
+    <description><![CDATA[My journey learning to draw using the Draw a Box program, starting with basic lines and working towards the 250 boxes challenge.]]></description>
+</item>
+<item>
+    <title>Beginning My Creative Journey</title>
+    <link>http://localhost:1313/posts/beginning-journey/</link>
+    <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/posts/beginning-journey/</guid>
+    <description><![CDATA[What I want to learn]]></description>
+</item>
+<item>
+    <title>Pong Clone</title>
+    <link>http://localhost:1313/posts/pong-game/</link>
+    <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/posts/pong-game/</guid>
+    <description><![CDATA[<p><strong>Game #1 of the 20 Games Challenge - A classic Pong clone made with Godot Engine!</strong></p>
+<p>This is the first game in my journey to complete the 20 Games Challenge using Godot Engine. Pong is a perfect starting point - it&rsquo;s simple yet teaches fundamental game development concepts like collision detection, player input, and basic AI.</p>
+<!-- raw HTML omitted -->
+<h2 id="play--source-code">Play &amp; Source Code</h2>
+<p>You can also:</p>
+<ul>
+<li><a href="https://pong.enutie.com" target="_blank" rel="noopener noreffer ">Play in fullscreen</a>{:target=&quot;_blank&quot;}</li>
+<li><a href="https://github.com/enutie/godot-pong" target="_blank" rel="noopener noreffer ">View on GitHub</a>{:target=&quot;_blank&quot;}</li>
+</ul>
+<p><em>Stay tuned for the next games in the challenge!</em></p>]]></description>
+</item>
+<item>
+    <title>The 20 Games Challenge</title>
+    <link>http://localhost:1313/posts/20-games-challenge/</link>
+    <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/posts/20-games-challenge/</guid>
+    <description><![CDATA[Challenge to learn Game Development the right way.]]></description>
+</item>
+</channel>
 </rss>

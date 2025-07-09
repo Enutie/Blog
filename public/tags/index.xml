@@ -1,11 +1,88 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on Enuties Blog</title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Enuties Blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - Tag - Enuties Blog</title>
+        <link>http://localhost:1313/tags/</link>
+        <description>Tags - Tag - Enuties Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>Enutie@gmail.com (Morten Dahl Pedersen)</managingEditor>
+            <webMaster>Enutie@gmail.com (Morten Dahl Pedersen)</webMaster><lastBuildDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>Art</title>
+    <link>http://localhost:1313/tags/art/</link>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/tags/art/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Character-Design</title>
+    <link>http://localhost:1313/tags/character-design/</link>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/tags/character-design/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Learning</title>
+    <link>http://localhost:1313/tags/learning/</link>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/tags/learning/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Practice</title>
+    <link>http://localhost:1313/tags/practice/</link>
+    <pubDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/tags/practice/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Drawabox</title>
+    <link>http://localhost:1313/tags/drawabox/</link>
+    <pubDate>Thu, 12 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/tags/drawabox/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Drawing</title>
+    <link>http://localhost:1313/tags/drawing/</link>
+    <pubDate>Thu, 12 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/tags/drawing/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>20 Game Challnge</title>
+    <link>http://localhost:1313/tags/20-game-challnge/</link>
+    <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/tags/20-game-challnge/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Devlog</title>
+    <link>http://localhost:1313/tags/devlog/</link>
+    <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/tags/devlog/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Game Dev</title>
+    <link>http://localhost:1313/tags/game-dev/</link>
+    <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/tags/game-dev/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Music</title>
+    <link>http://localhost:1313/tags/music/</link>
+    <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
+    <author>Morten Dahl Pedersen</author>
+    <guid>http://localhost:1313/tags/music/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

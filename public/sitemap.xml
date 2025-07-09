@@ -1,18 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-04-07T22:46:20+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
-    <lastmod>2025-04-07T22:46:20+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-04-07T22:46:20+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-  </url>
-</urlset>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    ><url>
+            <loc>http://localhost:1313/posts/250-box-challenge/</loc><lastmod>2025-06-13T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2025-06-13T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2025-06-13T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/art/</loc><lastmod>2024-12-19T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/character-design/</loc><lastmod>2024-12-19T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/draw-a-box-lesson-1-complete/</loc><lastmod>2024-12-19T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/learning/</loc><lastmod>2024-12-19T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/first-sketch/</loc><lastmod>2024-12-19T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/practice/</loc><lastmod>2024-12-19T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2024-12-19T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/drawing-lesson-1/</loc><lastmod>2024-12-15T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/first-game/</loc><lastmod>2024-12-14T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/draw-a-box/</loc><lastmod>2024-12-12T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/drawabox/</loc><lastmod>2024-12-12T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/drawing/</loc><lastmod>2024-12-12T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/20-game-challnge/</loc><lastmod>2023-12-12T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/beginning-journey/</loc><lastmod>2024-12-10T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/devlog/</loc><lastmod>2024-12-10T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/game-dev/</loc><lastmod>2024-12-10T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/music/</loc><lastmod>2024-12-10T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/pong-game/</loc><lastmod>2024-12-10T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/posts/20-games-challenge/</loc><lastmod>2023-12-12T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/tags/writing/</loc><lastmod>2024-12-10T00:00:00&#43;00:00</lastmod></url><url>
+            <loc>http://localhost:1313/categories/</loc></url></urlset>

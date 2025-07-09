@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Game #1 Complete - Pong Clone - Enuties Blog</title><meta name="Description" content="Taking the first step in the 20 Games Challenge by creating a Pong clone in Godot"><meta property="og:url" content="http://localhost:1313/posts/first-game/">
+  <meta property="og:site_name" content="Enuties Blog">
+  <meta property="og:title" content="Game #1 Complete - Pong Clone">
+  <meta property="og:description" content="Taking the first step in the 20 Games Challenge by creating a Pong clone in Godot">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-14T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/posts/first-game/feature.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/posts/first-game/feature.png">
+  <meta name="twitter:title" content="Game #1 Complete - Pong Clone">
+  <meta name="twitter:description" content="Taking the first step in the 20 Games Challenge by creating a Pong clone in Godot">
+<meta name="application-name" content="Enutie&#39;s Blog">
+<meta name="apple-mobile-web-app-title" content="Enutie&#39;s Blog">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/posts/first-game/" /><link rel="prev" href="http://localhost:1313/posts/draw-a-box/" /><link rel="next" href="http://localhost:1313/posts/drawing-lesson-1/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Game #1 Complete - Pong Clone",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/posts\/first-game\/"
+        },"genre": "posts","wordcount":  301 ,
+        "url": "http:\/\/localhost:1313\/posts\/first-game\/","datePublished": "2024-12-14T00:00:00+00:00","dateModified": "2024-12-14T00:00:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Morten Dahl Pedersen"
+            },"description": "Taking the first step in the 20 Games Challenge by creating a Pong clone in Godot"
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Enuties Blog">Enutie&#39;s Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Enuties Blog">Enutie&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Game #1 Complete - Pong Clone</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://github.com/Enutie" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Morten Dahl Pedersen</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-12-14">2024-12-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;301 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-start-with-pong">Why Start With Pong?</a></li>
+    <li><a href="#development-process">Development Process</a></li>
+    <li><a href="#try-it-out">Try It Out</a></li>
+    <li><a href="#whats-next">What&rsquo;s Next?</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><strong>One down, nineteen to go! Here&rsquo;s my experience completing Game #1 of the 20 Games Challenge - a Pong clone made with Godot Engine.</strong></p>
+<p>I recently discovered the 20 Games Challenge, a structured learning path where you create increasingly complex games to build your game development skills. The first challenge suggests starting with either Pong or Flappy Bird to learn the basics of your chosen game engine.</p>
+<h2 id="why-start-with-pong">Why Start With Pong?</h2>
+<p>The challenge specifically recommends Pong as a first game because it helps you gain a basic understanding of your game engine while focusing on core mechanics rather than complex art or sound. According to the challenge guidelines, Game #1 should teach you:</p>
+<ul>
+<li>Using your game engine of choice</li>
+<li>Creating and destroying objects</li>
+<li>Processing player input and moving objects on screen</li>
+<li>Detecting and reacting to collisions</li>
+</ul>
+<p>All of these fundamentals are present in Pong, making it an ideal starting point.</p>
+<h2 id="development-process">Development Process</h2>
+<p>I chose Godot Engine for this journey, and it proved to be a great choice. Here&rsquo;s what I learned while implementing the core mechanics:</p>
+<ul>
+<li>Setting up 2D scenes and nodes in Godot</li>
+<li>Working with collision shapes and physics bodies</li>
+<li>Implementing basic paddle AI</li>
+<li>Managing game states and score tracking</li>
+<li>Web export process</li>
+</ul>
+<h2 id="try-it-out">Try It Out</h2>
+<p>You can play the game right here:</p>
+<!-- raw HTML omitted -->
+<p>Want to check out the code or make your own version? The project is available on GitHub:</p>
+<p><a href="https://github.com/enutie/godot-pong" target="_blank" rel="noopener noreffer ">View on GitHub</a>{:target=&quot;_blank&quot;}</p>
+<h2 id="whats-next">What&rsquo;s Next?</h2>
+<p>Game #2 in the challenge suggests either Breakout or Jetpack Joyride. The focus shifts to:</p>
+<ul>
+<li>Reusing code and assets between projects</li>
+<li>Saving high scores between sessions</li>
+<li>Creating and playing sound effects</li>
+</ul>
+<p>I&rsquo;m currently deciding which of these to tackle next. Stay tuned for my next game in the challenge!</p>
+<p><strong>Interested in taking the 20 Games Challenge yourself?</strong> You can find more information about it <a href="https://20_games_challenge.com" target="_blank" rel="noopener noreffer ">here</a>.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-12-14</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/posts/first-game/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/posts/first-game/" data-title="Game #1 Complete - Pong Clone"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/posts/first-game/" data-title="Game #1 Complete - Pong Clone"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/first-game/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/posts/first-game/" data-title="Game #1 Complete - Pong Clone"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://localhost:1313/posts/first-game/" data-title="Game #1 Complete - Pong Clone"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/posts/first-game/" data-title="Game #1 Complete - Pong Clone"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="http://localhost:1313/posts/first-game/" data-title="Game #1 Complete - Pong Clone" data-description="Taking the first step in the 20 Games Challenge by creating a Pong clone in Godot"><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ffirst-game%2f&amp;text=Game%20%231%20Complete%20-%20Pong%20Clone" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/draw-a-box/" class="prev" rel="prev" title="Draw a Box: My First Steps into Drawing"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Draw a Box: My First Steps into Drawing</a>
+            <a href="/posts/drawing-lesson-1/" class="next" rel="next" title="Lesson 1">Lesson 1<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/Enutie" target="_blank">Morten Dahl Pedersen</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.min.js"></script></body>
+</html>
