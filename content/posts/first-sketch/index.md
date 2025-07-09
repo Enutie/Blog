@@ -24,6 +24,4 @@ This practice sketch is based on the "Moon Knight" artwork by wu shenyou, which 
 
 This was a very ambitious drawing, but then again, I need to challenge myself to grow. Proportions is very difficult I think, understanding how big things need to be. I think I need to study some basic anatomy or something like that to get it better. 
 
-I'm excited to keep learning and improving. 
-
----
+I'm excited to keep learning and improving.

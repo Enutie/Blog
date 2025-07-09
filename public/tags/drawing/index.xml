@@ -1,24 +1,19 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Drawing - Tag - Enuties Blog</title>
-        <link>http://localhost:1313/tags/drawing/</link>
-        <description>Drawing - Tag - Enuties Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>Enutie@gmail.com (Morten Dahl Pedersen)</managingEditor>
-            <webMaster>Enutie@gmail.com (Morten Dahl Pedersen)</webMaster><lastBuildDate>Thu, 12 Dec 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/drawing/" rel="self" type="application/rss+xml" /><item>
-    <title>Draw a Box: My First Steps into Drawing</title>
-    <link>http://localhost:1313/posts/draw-a-box/</link>
-    <pubDate>Thu, 12 Dec 2024 00:00:00 &#43;0000</pubDate>
-    <author>Morten Dahl Pedersen</author>
-    <guid>http://localhost:1313/posts/draw-a-box/</guid>
-    <description><![CDATA[My journey learning to draw using the Draw a Box program, starting with basic lines and working towards the 250 boxes challenge.]]></description>
-</item>
-<item>
-    <title>Beginning My Creative Journey</title>
-    <link>http://localhost:1313/posts/beginning-journey/</link>
-    <pubDate>Tue, 10 Dec 2024 00:00:00 &#43;0000</pubDate>
-    <author>Morten Dahl Pedersen</author>
-    <guid>http://localhost:1313/posts/beginning-journey/</guid>
-    <description><![CDATA[What I want to learn]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drawing on Enutie Blog</title>
+    <link>http://localhost:1313/tags/drawing/</link>
+    <description>Recent content in Drawing on Enutie Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/drawing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Draw a Box: My First Steps into Drawing</title>
+      <link>http://localhost:1313/posts/draw-a-box/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/draw-a-box/</guid>
+      <description>My journey learning to draw using the Draw a Box program, starting with basic lines and working towards the 250 boxes challenge.</description>
+    </item>
+  </channel>
 </rss>

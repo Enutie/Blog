@@ -1,28 +1,26 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Art - Tag - Enuties Blog</title>
-        <link>http://localhost:1313/tags/art/</link>
-        <description>Art - Tag - Enuties Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>Enutie@gmail.com (Morten Dahl Pedersen)</managingEditor>
-            <webMaster>Enutie@gmail.com (Morten Dahl Pedersen)</webMaster><lastBuildDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://localhost:1313/tags/art/" rel="self" type="application/rss+xml" /><item>
-    <title>My Art Learning Journey - Day 1: Studying Knight Character Design</title>
-    <link>http://localhost:1313/posts/first-sketch/</link>
-    <pubDate>Thu, 19 Dec 2024 00:00:00 &#43;0000</pubDate>
-    <author>Morten Dahl Pedersen</author>
-    <guid>http://localhost:1313/posts/first-sketch/</guid>
-    <description><![CDATA[<h1 id="starting-my-art-journey">Starting My Art Journey</h1>
-<p>As you probably know, I am following the Draw a Box course and they emphasize that you also draw for fun at the side, called <a href="https://drawabox.com/lesson/0/2/50percent" target="_blank" rel="noopener noreffer ">The 50 rule</a>. Today, I practiced by studying a beautiful character design by wu shenyou, a professional concept artist.</p>
-<h2 id="my-practice-attempt">My Practice Attempt</h2>
-<p></p>
-<p>This is my beginner attempt at studying the original artwork. I know I have a long way to go, but everyone starts somewhere!</p>]]></description>
-</item>
-<item>
-    <title>Draw a Box: My First Steps into Drawing</title>
-    <link>http://localhost:1313/posts/draw-a-box/</link>
-    <pubDate>Thu, 12 Dec 2024 00:00:00 &#43;0000</pubDate>
-    <author>Morten Dahl Pedersen</author>
-    <guid>http://localhost:1313/posts/draw-a-box/</guid>
-    <description><![CDATA[My journey learning to draw using the Draw a Box program, starting with basic lines and working towards the 250 boxes challenge.]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Art on Enutie Blog</title>
+    <link>http://localhost:1313/tags/art/</link>
+    <description>Recent content in Art on Enutie Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 19 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/art/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Art Learning Journey - Day 1: Studying Knight Character Design</title>
+      <link>http://localhost:1313/posts/first-sketch/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/first-sketch/</guid>
+      <description>&lt;h1 id=&#34;starting-my-art-journey&#34;&gt;Starting My Art Journey&lt;/h1&gt;&#xA;&lt;p&gt;As you probably know, I am following the Draw a Box course and they emphasize that you also draw for fun at the side, called &lt;a href=&#34;https://drawabox.com/lesson/0/2/50percent&#34;&gt;The 50 rule&lt;/a&gt;. Today, I practiced by studying a beautiful character design by wu shenyou, a professional concept artist.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-practice-attempt&#34;&gt;My Practice Attempt&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;moon-knight.jpeg&#34; alt=&#34;My practice sketch&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This is my beginner attempt at studying the original artwork. I know I have a long way to go, but everyone starts somewhere!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Draw a Box: My First Steps into Drawing</title>
+      <link>http://localhost:1313/posts/draw-a-box/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/draw-a-box/</guid>
+      <description>My journey learning to draw using the Draw a Box program, starting with basic lines and working towards the 250 boxes challenge.</description>
+    </item>
+  </channel>
 </rss>

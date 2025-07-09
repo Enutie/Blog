@@ -31,13 +31,9 @@ I chose Godot Engine for this journey, and it proved to be a great choice. Here'
 
 ## Try It Out
 
-You can play the game right here:
+You can play the game at: [https://pong.enutie.com](https://pong.enutie.com)
 
-<iframe src="https://pong.enutie.com" width="800" height="600" frameborder="0"></iframe>
-
-Want to check out the code or make your own version? The project is available on GitHub:
-
-[View on GitHub](https://github.com/enutie/godot-pong){:target="_blank"}
+Want to check out the code or make your own version? The project is available on GitHub: [https://github.com/enutie/godot-pong](https://github.com/enutie/godot-pong)
 
 ## What's Next?
 

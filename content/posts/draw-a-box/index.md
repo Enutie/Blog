@@ -22,18 +22,13 @@ I'm currently working through Lesson One, gradually approaching the infamous 250
 
 ### Ellipses Practice
 ![Tables of Ellipses practice from Lesson One](tables-of-ellipses.jpg)
-
 ![Ellipses in Planes exercise](ellipses-in-planes.jpg)
-
 ![Funnels exercise with ellipses](Funnels.jpg)
 
 ### Box Construction
 ![Plotted Perspective exercise](plotted-perspective.jpg)
-
 ![Rough Perspective practice](rough-perspective.jpg)
-
 ![Rotated Boxes exercise](rotated-boxes.jpg)
-
 ![Organic Perspective exercise](organic-perspective.jpg)
 
 ## Initial Reflections

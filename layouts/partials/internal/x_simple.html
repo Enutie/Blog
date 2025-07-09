@@ -1,8 +1,0 @@
-{{- /* X/Twitter simple embed - Hugo internal shortcode not available, using basic link */ -}}
-{{- $id := .Get 0 -}}
-{{- $user := .Get 1 -}}
-{{- if $id -}}
-<p><a href="https://twitter.com/{{ $user }}/status/{{ $id }}" target="_blank" rel="noopener noreferrer">View Tweet by @{{ $user }}</a></p>
-{{- else -}}
-<p>Twitter/X link not available</p>
-{{- end -}}
