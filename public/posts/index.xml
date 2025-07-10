@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Enutie Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jul 2025 23:48:16 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lesson 2 Review</title>
+      <link>http://localhost:1313/posts/lesson-2-review/</link>
+      <pubDate>Thu, 10 Jul 2025 23:48:16 +0200</pubDate>
+      <guid>http://localhost:1313/posts/lesson-2-review/</guid>
+      <description>&lt;h1 id=&#34;lesson-2-completed-and-marked-as-complete&#34;&gt;Lesson 2 completed and marked as complete!&lt;/h1&gt;&#xA;&lt;p&gt;Lesson two really challenged me and my understanding. A lot of the time I was wondering what I was doing was even correct. But to be honest, after the dissecting, it looked really cool, even though it was not entirely correct.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-critic&#34;&gt;My critic&lt;/h2&gt;&#xA;&lt;p&gt;I am on the offical critic and I got one from Uncomfortable himself, which was pretty cool to be honest.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>250 box challenge completed</title>
       <link>http://localhost:1313/posts/250-box-challenge/</link>
@@ -35,6 +42,13 @@
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/draw-a-box/</guid>
       <description>My journey learning to draw using the Draw a Box program, starting with basic lines and working towards the 250 boxes challenge.</description>
+    </item>
+    <item>
+      <title>Beginning My Creative Journey</title>
+      <link>http://localhost:1313/posts/beginning-journey/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/beginning-journey/</guid>
+      <description>What I want to learn</description>
     </item>
     <item>
       <title>The 20 Games Challenge</title>

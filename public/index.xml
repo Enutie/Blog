@@ -6,8 +6,15 @@
     <description>Recent content on Enutie Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jul 2025 23:48:16 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Draw a Box Lesson 2: Complete and Reviewed!</title>
+      <link>http://localhost:1313/posts/lesson-2-review/</link>
+      <pubDate>Thu, 10 Jul 2025 23:48:16 +0200</pubDate>
+      <guid>http://localhost:1313/posts/lesson-2-review/</guid>
+      <description>Lesson 2 challenged my understanding but was rewarding. Got official critique from Uncomfortable himself covering organic arrows, contour lines, textures, and form intersections.</description>
+    </item>
     <item>
       <title>250 box challenge completed</title>
       <link>http://localhost:1313/posts/250-box-challenge/</link>
@@ -35,6 +42,13 @@
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/draw-a-box/</guid>
       <description>My journey learning to draw using the Draw a Box program, starting with basic lines and working towards the 250 boxes challenge.</description>
+    </item>
+    <item>
+      <title>Beginning My Creative Journey</title>
+      <link>http://localhost:1313/posts/beginning-journey/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/beginning-journey/</guid>
+      <description>What I want to learn</description>
     </item>
     <item>
       <title>The 20 Games Challenge</title>
