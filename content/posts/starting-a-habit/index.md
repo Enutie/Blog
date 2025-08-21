@@ -1,7 +1,7 @@
 ---
-date: = '2025-08-21T19:37:59+02:00'
-draft: = false
-title: = 'Starting a Habit'
+title: "Starting a Habit"
+date: 2025-08-21
+draft: false
 tags: ["learning"]
 ---
 

@@ -6,8 +6,15 @@
     <description>Recent content on Enutie Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Jul 2025 23:48:16 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 21 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting a Habit</title>
+      <link>http://localhost:1313/posts/starting-a-habit/</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/starting-a-habit/</guid>
+      <description>&lt;h1 id=&#34;starting-a-new-habit&#34;&gt;Starting a new habit&lt;/h1&gt;&#xA;&lt;p&gt;Greetings {visitor} (I do not expect anyone reads this, so I suppose its a post just for me).&lt;/p&gt;&#xA;&lt;p&gt;I have to confess something - I am not very consistent. I seem to have loads of projects, ideas or skill that I want to work on.&lt;/p&gt;&#xA;&lt;p&gt;What is even worse is the AI boom that is happening at the moment. It is super easy to just converse with an AI and essentially you don&amp;rsquo;t do the work and by work I mean coding and writing for my case.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Draw a Box Lesson 2: Complete and Reviewed!</title>
       <link>http://localhost:1313/posts/lesson-2-review/</link>
