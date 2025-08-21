@@ -1,8 +1,9 @@
-+++
-date = '2025-08-21T19:37:59+02:00'
-draft = true
-title = 'Starting a Habit'
-+++
+---
+date: = '2025-08-21T19:37:59+02:00'
+draft: = false
+title: = 'Starting a Habit'
+tags: ["learning"]
+---
 
 # Starting a new habit
 
