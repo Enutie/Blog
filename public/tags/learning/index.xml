@@ -6,8 +6,15 @@
     <description>Recent content in Learning on Enutie Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 21 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 23 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Attempt at Dragon</title>
+      <link>http://localhost:1313/posts/first-attempt-at-dragon/</link>
+      <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/first-attempt-at-dragon/</guid>
+      <description>&lt;h1 id=&#34;test&#34;&gt;Test&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;Red_Dragon&#34; alt=&#34;Red Dragon &#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Starting a Habit</title>
       <link>http://localhost:1313/posts/starting-a-habit/</link>
