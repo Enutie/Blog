@@ -6,34 +6,41 @@
     <description>Recent content in Tags on Enutie Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 23 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Sep 2025 16:55:48 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Drawing</title>
-      <link>http://localhost:1313/tags/drawing/</link>
-      <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/drawing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Learning</title>
-      <link>http://localhost:1313/tags/learning/</link>
-      <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/learning/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Art</title>
       <link>http://localhost:1313/tags/art/</link>
-      <pubDate>Thu, 10 Jul 2025 23:48:16 +0200</pubDate>
+      <pubDate>Tue, 02 Sep 2025 16:55:48 +0200</pubDate>
       <guid>http://localhost:1313/tags/art/</guid>
       <description></description>
     </item>
     <item>
       <title>Drawabox</title>
       <link>http://localhost:1313/tags/drawabox/</link>
-      <pubDate>Thu, 10 Jul 2025 23:48:16 +0200</pubDate>
+      <pubDate>Tue, 02 Sep 2025 16:55:48 +0200</pubDate>
       <guid>http://localhost:1313/tags/drawabox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Drawing</title>
+      <link>http://localhost:1313/tags/drawing/</link>
+      <pubDate>Tue, 02 Sep 2025 16:55:48 +0200</pubDate>
+      <guid>http://localhost:1313/tags/drawing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>http://localhost:1313/tags/learning/</link>
+      <pubDate>Tue, 02 Sep 2025 16:55:48 +0200</pubDate>
+      <guid>http://localhost:1313/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lesson3</title>
+      <link>http://localhost:1313/tags/lesson3/</link>
+      <pubDate>Tue, 02 Sep 2025 16:55:48 +0200</pubDate>
+      <guid>http://localhost:1313/tags/lesson3/</guid>
       <description></description>
     </item>
     <item>
