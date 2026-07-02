@@ -1,0 +1,13 @@
+{{- /* Shared banner: oxblood bar + "/ the log" + Posts·Games nav, then brass band.
+       Posts is active on all blog pages; Games points to the main site. */ -}}
+<header class="banner">
+  <div class="banner__brand">
+    <a class="banner__logo" href="https://enutie.com">ENUTIE</a>
+    <span class="banner__tag">/ the log</span>
+  </div>
+  <nav class="nav">
+    <a class="is-active" href="{{ "/posts/" | relURL }}">Posts</a>
+    <a href="https://enutie.com/games">Games</a>
+  </nav>
+</header>
+<div class="brass-band"></div>

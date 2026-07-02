@@ -1,0 +1,17 @@
+{{- /* Per-tag feed consumed by the homepage pursuit cards.
+       Contract: docs/blog-json-feed.md. Newest first (Hugo default). */ -}}
+{{- $posts := .Pages -}}
+{
+  "tag": {{ .Title | jsonify }},
+  "count": {{ len $posts }},
+  "posts": [
+    {{- range $i, $p := first 10 $posts -}}
+    {{- if $i }},{{ end }}
+    {
+      "title": {{ $p.Title | jsonify }},
+      "url": {{ $p.Permalink | jsonify }},
+      "date": {{ $p.Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
+    }
+    {{- end }}
+  ]
+}

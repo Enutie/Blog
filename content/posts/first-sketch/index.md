@@ -1,10 +1,10 @@
 ---
 title: "My Art Learning Journey - Day 1: Studying Knight Character Design"
 date: 2024-12-19
-tags: ["art", "learning", "practice", "character-design"]
+tags: ["drawing"]
 ---
 
-# Starting My Art Journey
+## Starting My Art Journey
 
 As you probably know, I am following the Draw a Box course and they emphasize that you also draw for fun at the side, called [The 50 rule](https://drawabox.com/lesson/0/2/50percent). Today, I practiced by studying a beautiful character design by wu shenyou, a professional concept artist.
 

@@ -4,7 +4,7 @@ draft = false
 title = 'Draw a Box Lesson 2: Complete and Reviewed!'
 description = "My Draw a Box Lesson 2 completion with detailed critique from Uncomfortable"
 summary = "Lesson 2 challenged my understanding but was rewarding. Got official critique from Uncomfortable himself covering organic arrows, contour lines, textures, and form intersections."
-tags = ["drawing", "learning", "drawabox", "art", "lesson2"]
+tags = ["drawing"]
 +++
 
 **Lesson 2 is complete and officially marked as finished!**

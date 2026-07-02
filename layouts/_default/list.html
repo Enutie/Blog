@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{- $isTerm := eq .Kind "term" -}}
+{{- $pursuitTags := slice "drawing" "gamedev" "wargaming" "writing" "music" -}}
+
+<div class="list-head">
+  {{ if $isTerm }}
+    <h1>The log — {{ .Title | lower }}</h1>
+    <div class="list-head__sub">Every post tagged <em>{{ .Title | lower }}</em>. Newest first.</div>
+  {{ else }}
+    <h1>The log</h1>
+    <div class="list-head__sub">Here is where my messy thoughts and experiments live. </div>
+  {{ end }}
+
+  <div class="chips">
+    <a class="chip chip--all {{ if not $isTerm }}is-current{{ end }}" href="{{ "/posts/" | relURL }}">all</a>
+    {{ range $pursuitTags }}
+      {{- $active := and $isTerm (eq ($.Title | urlize) .) -}}
+      <a class="chip{{ if $active }} is-active{{ end }}" href="{{ (printf "/tags/%s/" .) | relURL }}">{{ . }}</a>
+    {{ end }}
+  </div>
+</div>
+
+{{- $posts := where .Pages "Type" "posts" -}}
+{{- if $isTerm }}{{ $posts = .Pages }}{{ end -}}
+
+<div class="postlist">
+  {{ range $i, $p := $posts }}
+    <a class="postrow" href="{{ .RelPermalink }}">
+      <div class="postrow__titlerow">
+        <span class="postrow__title">{{ .Title }}</span>
+        {{ if and (not $isTerm) (eq $i 0) }}<span class="postrow__new">new</span>{{ end }}
+      </div>
+      {{ with .Description }}<div class="postrow__excerpt">{{ . }}</div>{{ end }}
+      <div class="postrow__meta">
+        {{ .Date.Format "2006-01-02" }}
+        {{- with (index .Params.tags 0) }} · {{ . }}{{ end }}
+        {{- with .ReadingTime }} · {{ . }} min{{ end }}
+      </div>
+    </a>
+  {{ else }}
+    <div class="list-empty">Seems like I haven't started yet - whoops!</div>
+  {{ end }}
+</div>
+{{ end }}

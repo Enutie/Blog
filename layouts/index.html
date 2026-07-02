@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="list-head">
+  <h1>The log</h1>
+  <div class="list-head__sub">
+    Here is where my messy thoughts and experiments live. 
+  </div>
+  <div class="chips">
+    <a class="chip chip--all" href="{{ "/posts/" | relURL }}">all</a>
+    {{ range (slice "drawing" "gamedev" "wargaming" "writing" "music") }}
+      <a class="chip" href="{{ (printf "/tags/%s/" .) | relURL }}">{{ . }}</a>
+    {{ end }}
+  </div>
+</div>
+
+<div class="postlist">
+  {{ range $i, $p := (where .Site.RegularPages "Type" "posts") }}
+    <a class="postrow" href="{{ .RelPermalink }}">
+      <div class="postrow__titlerow">
+        <span class="postrow__title">{{ .Title }}</span>
+        {{ if eq $i 0 }}<span class="postrow__new">new</span>{{ end }}
+      </div>
+      {{ with .Description }}<div class="postrow__excerpt">{{ . }}</div>{{ end }}
+      <div class="postrow__meta">
+        {{ .Date.Format "2006-01-02" }}
+        {{- with (index .Params.tags 0) }} · {{ . }}{{ end }}
+        {{- with .ReadingTime }} · {{ . }} min{{ end }}
+      </div>
+    </a>
+  {{ else }}
+    <div class="list-empty">Seems like I haven't started yet - whoops!</div>
+  {{ end }}
+</div>
+{{ end }}

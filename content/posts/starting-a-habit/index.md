@@ -2,10 +2,10 @@
 title: "Starting a Habit"
 date: 2025-08-21
 draft: false
-tags: ["learning"]
+tags: ["writing"]
 ---
 
-# Starting a new habit
+## Starting a new habit
 
 Greetings {visitor} (I do not expect anyone reads this, so I suppose its a post just for me).
 

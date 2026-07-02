@@ -3,6 +3,7 @@ title: "Game #1 Complete - Pong Clone"
 date: 2024-12-14
 description: "Taking the first step in the 20 Games Challenge by creating a Pong clone in Godot"
 summary: "Taking the first step in the 20 Games Challenge by creating a Pong clone in Godot"
+tags: ["gamedev"]
 ---
 
 **One down, nineteen to go! Here's my experience completing Game #1 of the 20 Games Challenge - a Pong clone made with Godot Engine.**

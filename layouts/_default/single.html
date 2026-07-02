@@ -1,0 +1,56 @@
+{{ define "main" }}
+<a class="breadcrumb" href="{{ "/posts/" | relURL }}">← all posts</a>
+
+<article>
+  <header class="article-head">
+    <h1>{{ .Title }}</h1>
+    <div class="article-head__meta">
+      <span class="article-head__date">
+        {{ .Date.Format "2006-01-02" }}
+        {{- with .ReadingTime }} · {{ . }} min{{ end }}
+        {{- with .Params.author | default .Site.Params.author }} · by {{ . }}{{ end }}
+      </span>
+      {{ range .Params.tags }}
+        <a class="tag-chip" href="{{ (printf "/tags/%s/" (. | urlize)) | relURL }}">{{ . }}</a>
+      {{ end }}
+    </div>
+  </header>
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+</article>
+
+{{- /* older/newer decided by date, not by Hugo's confusingly-named .Prev/.Next */ -}}
+{{- $older := false -}}{{- $newer := false -}}
+{{- range (slice .PrevInSection .NextInSection) -}}
+  {{- if . -}}
+    {{- if lt .Date $.Date }}{{ $older = . }}{{ else }}{{ $newer = . }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+
+<nav class="pager">
+  {{ if $older }}
+    <a class="pager__side" href="{{ $older.RelPermalink }}">
+      <span class="pager__label">← older</span>
+      <span class="pager__title">{{ $older.Title }}</span>
+    </a>
+  {{ else }}
+    <div class="pager__side pager__side--disabled">
+      <span class="pager__label">← older</span>
+      <span class="pager__title">this is the first one</span>
+    </div>
+  {{ end }}
+  {{ if $newer }}
+    <a class="pager__side pager__side--next" href="{{ $newer.RelPermalink }}">
+      <span class="pager__label">newer →</span>
+      <span class="pager__title">{{ $newer.Title }}</span>
+    </a>
+  {{ else }}
+    <div class="pager__side pager__side--next pager__side--disabled">
+      <span class="pager__label">newer →</span>
+      <span class="pager__title">this is the latest one</span>
+    </div>
+  {{ end }}
+</nav>
+{{ end }}

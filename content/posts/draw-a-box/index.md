@@ -4,7 +4,7 @@ date: 2024-12-12
 draft: false
 description: "Following the Draw a Box program to learn fundamental drawing skills"
 summary: "My journey learning to draw using the Draw a Box program, starting with basic lines and working towards the 250 boxes challenge."
-tags: ["drawing", "learning", "drawabox", "art"]
+tags: ["drawing"]
 ---
 
 **One of the skills I've decided to develop is drawing. While I could simply sit down and start drawing - which would certainly be better than doing nothing - I realized that figuring out all the drawing concepts on my own would be an unnecessarily long and time-consuming process.**

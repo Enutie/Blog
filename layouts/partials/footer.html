@@ -1,0 +1,7 @@
+<footer class="footer">
+  <div>© enutie {{ now.Year }}</div>
+  <div class="footer__links">
+    {{ with .Site.Home.OutputFormats.Get "rss" }}<a href="{{ .Permalink }}">rss</a>{{ end }}
+    <a href="https://enutie.com">enutie.com</a>
+  </div>
+</footer>

@@ -2,10 +2,10 @@
 title: "First Attempt at Dragon"
 date: 2025-08-23
 draft: false
-tags: ["learning", "drawing"]
+tags: ["drawing"]
 ---
 
-# An attempt to draw a dragon from reference.
+## An attempt to draw a dragon from reference.
 
 Here is the beautiful reference I am using
 

@@ -3,6 +3,7 @@ title: "250 box challenge completed"
 date: 2025-06-13
 description: "After completing lesson 1 I dow straight into the 250 challenge, after 6 months its finally completed."
 summary: "I am finally done with the 250 challenge, a process taking me 6 months to complete."
+tags: ["drawing"]
 ---
 
 **250 boxes. It is indeed a lot, but why did it take me 6 months?**

@@ -1,14 +1,31 @@
 baseURL = 'https://blog.enutie.com'
 languageCode = 'en'
 title = 'Enutie Blog'
-theme = 'ananke'
+
+# No theme — layouts live in /layouts, styling in /assets & /static.
+# See docs/blog-json-feed.md for the homepage feed contract.
 
 [params]
   author = 'Enutie'
   description = 'My creative journey - art, code, and games'
-  
+
 [menu]
   [[menu.main]]
     name = 'Posts'
     url = '/posts/'
     weight = 10
+
+# The five pursuit tags feed the homepage's pursuit cards.
+[taxonomies]
+  tag = 'tags'
+
+# Emit per-tag JSON at /tags/<tag>/index.json for the mainside feed.
+[outputs]
+  home = ['HTML', 'RSS']
+  term = ['HTML', 'RSS', 'JSON']
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true            # allow raw HTML in posts (older content uses it)
+  [markup.highlight]
+    noClasses = false        # emit classes so code follows the mono/token styling

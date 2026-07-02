@@ -4,7 +4,7 @@ date: 2024-12-10
 draft: false
 description: "What I want to learn"
 summary: "What I want to learn"
-tags: ["devlog", "game dev", "drawing", "music", "writing"]
+tags: ["gamedev", "drawing", "music", "writing"]
 ---
 
 I'm starting this site as a place to document my journey into game development. As a web developer, I already have experience with coding, but game development requires a broader set of skills that I'm excited to explore.

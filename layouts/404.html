@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="notfound">
+  <div class="notfound__code">404</div>
+  <h1 class="notfound__title">This page didn't get made.</h1>
+  <p class="notfound__body">
+    Either it's gone, the link was wrong, or it only ever existed in my head.
+    All three happen around here.
+  </p>
+  <a class="notfound__link" href="{{ "/posts/" | relURL }}">← back to the log</a>
+</div>
+{{ end }}
