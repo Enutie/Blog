@@ -3,6 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6E1A1A">
+
+  {{- /* Set the theme before first paint to avoid a flash. An explicit stored
+         choice wins; otherwise follow the visitor's OS colour-scheme. Shares the
+         'enutie-theme' key with the main site (note: localStorage is per-origin,
+         so the choice doesn't sync across enutie.com ↔ blog.enutie.com). */ -}}
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('enutie-theme')
+        var sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        if ((stored || sys) === 'dark') document.documentElement.dataset.theme = 'dark'
+      } catch (e) {}
+    })()
+  </script>
+  <script src="{{ "js/theme.js" | relURL }}" defer></script>
+
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}

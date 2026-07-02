@@ -130,9 +130,3 @@ Push to `main` → GitHub Actions (`.github/workflows/hugo.yml`) builds with
 `hugo --minify` and deploys to GitHub Pages. `public/` is build output and is
 **not** committed (see `.gitignore`).
 
-## Design principles (from the handoff — keep them)
-
-No gradients, no shadows, no rounded corners, no emoji, no vague marketing copy.
-Red (`#6E1A1A`) is budgeted: banner + one rule/band per view + links. No fake
-progress — only countable artifacts (lessons done, games shipped, models
-painted). Voice is first-person, specific, lightly self-deprecating.

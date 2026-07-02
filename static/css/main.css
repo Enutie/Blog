@@ -9,13 +9,15 @@
   --body: #41382C;        /* body text */
   --sub: #66594A;         /* list intro / sub */
   --muted: #8B8171;       /* metadata, captions */
-  --red: #6E1A1A;         /* oxblood — banner, bands, buttons, links */
+  --red: #6E1A1A;         /* oxblood — banner, bands, buttons, blockquote band (a FILL color) */
+  --red-text: #6E1A1A;    /* interactive text (links, hovers) — becomes ember on dark */
   --red-hover: #832222;
   --brass: #B8862F;       /* highlights only */
   --border: #DDD4C2;
   --border-faint: #EEE7D8;
   --stat-bg: #EFE8D8;
-  --banner-sub: #D9A8A0;  /* mono text on the banner */
+  --banner-sub: #D9A8A0;  /* mono text on the (always-oxblood) banner */
+  --on-red: #F7F3EA;      /* text/logo on the oxblood banner — fixed in both themes */
   --chip-border: #CBBFA8;
   --tag-border: #CFA08A;
 
@@ -25,6 +27,25 @@
 
   --shell: 720px;
   --pad-x: clamp(20px, 5vw, 48px);
+}
+
+/* "lamplit" dark — warm umber, mirrors the main site's [data-theme=dark].
+   --red / --brass / --banner-sub / --on-red stay put: the banner and bands are
+   oxblood/brass in both themes. Only reading surfaces and interactive text shift. */
+[data-theme="dark"] {
+  --bg: #211A13;
+  --surface: #2B2318;
+  --text: #F0E9DA;
+  --body: #CFC5B0;
+  --sub: #B4A88E;
+  --muted: #93876F;
+  --red-text: #D4573F;    /* ember — oxblood is too dim as text on dark */
+  --red-hover: #E06B54;
+  --border: #443A2C;
+  --border-faint: #3A3023;
+  --stat-bg: #322A1D;
+  --chip-border: #5D5142;
+  --tag-border: #6E3A30;
 }
 
 * { box-sizing: border-box; }
@@ -62,7 +83,7 @@ body {
   font-family: var(--font-head);
   font-size: 24px;
   font-weight: 800;
-  color: var(--bg);
+  color: var(--on-red);
   letter-spacing: .01em;
   text-decoration: none;
 }
@@ -80,13 +101,54 @@ body {
   font-weight: 600;
 }
 .nav a { color: var(--banner-sub); text-decoration: none; }
-.nav a:hover { color: var(--bg); }
+.nav a:hover { color: var(--on-red); }
 .nav a.is-active {
-  color: var(--bg);
+  color: var(--on-red);
   border-bottom: 3px solid var(--brass);
   padding-bottom: 2px;
 }
 .brass-band { height: 4px; background: var(--brass); }
+
+/* theme toggle — ported from the main site's SiteBanner switch.
+   Colors are fixed (they sit on the always-oxblood banner in both themes). */
+.theme-switch {
+  position: relative;
+  width: 46px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  flex: none;
+}
+.theme-switch .track {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #9C5750;
+  transition: border-color .15s ease;
+}
+.theme-switch:hover .track { border-color: #D9A8A0; }
+.theme-switch .knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: var(--brass);
+  transition: transform .2s ease;
+}
+.theme-switch.dark .knob { transform: translateX(24px); }
+.theme-switch .knob::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2B2118;
+  transform: translate(-50%, -50%);
+}
 
 /* ---------- shell ---------- */
 .shell {
@@ -127,7 +189,7 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-.chip:hover { border-color: var(--red); color: var(--red); }
+.chip:hover { border-color: var(--red-text); color: var(--red-text); }
 .chip--all {
   color: var(--bg);
   background: var(--text);
@@ -135,7 +197,7 @@ body {
   padding: 4px 10px;
 }
 .chip--all:hover { color: var(--bg); }
-.chip.is-active { border-color: var(--red); color: var(--red); }
+.chip.is-active { border-color: var(--red-text); color: var(--red-text); }
 
 .postlist { border-top: 2px solid var(--text); display: flex; flex-direction: column; }
 .postrow {
@@ -160,11 +222,11 @@ body {
   color: var(--text);
   line-height: 1.25;
 }
-.postrow:hover .postrow__title { color: var(--red); }
+.postrow:hover .postrow__title { color: var(--red-text); }
 .postrow__new {
   font-family: var(--font-mono);
   font-size: 10.5px;
-  color: var(--red);
+  color: var(--red-text);
   white-space: nowrap;
 }
 .postrow__excerpt { font-size: 15px; color: var(--body); line-height: 1.65; }
@@ -185,7 +247,7 @@ body {
   margin-bottom: 24px;
   display: inline-block;
 }
-.breadcrumb:hover { color: var(--red); }
+.breadcrumb:hover { color: var(--red-text); }
 
 .article-head {
   display: flex;
@@ -216,12 +278,12 @@ body {
 .tag-chip {
   font-family: var(--font-mono);
   font-size: 10px;
-  color: var(--red);
+  color: var(--red-text);
   border: 1px solid var(--tag-border);
   padding: 2px 8px;
   text-decoration: none;
 }
-.tag-chip:hover { background: var(--red); color: var(--bg); }
+.tag-chip:hover { background: var(--red); color: var(--on-red); }
 
 /* ---------- prose (rendered markdown body) ---------- */
 .prose {
@@ -256,10 +318,10 @@ body {
 .prose ul, .prose ol { padding-left: 22px; }
 .prose li { margin: 4px 0; }
 .prose a {
-  color: var(--red);
+  color: var(--red-text);
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 2px solid var(--red);
+  border-bottom: 2px solid var(--red-text);
 }
 .prose a:hover { color: var(--red-hover); border-color: var(--red-hover); }
 .prose em { font-style: italic; }
@@ -357,7 +419,7 @@ body {
   font-weight: 700;
   color: var(--text);
 }
-.pager__side:hover .pager__title { color: var(--red); }
+.pager__side:hover .pager__title { color: var(--red-text); }
 
 /* ---------- 404 ---------- */
 .notfound {
@@ -370,7 +432,7 @@ body {
 .notfound__code {
   font-family: var(--font-mono);
   font-size: 13px;
-  color: var(--red);
+  color: var(--red-text);
   letter-spacing: .12em;
   padding-top: 24px;
 }
@@ -392,9 +454,9 @@ body {
 .notfound__link {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: var(--red);
+  color: var(--red-text);
   text-decoration: none;
-  border-bottom: 2px solid var(--red);
+  border-bottom: 2px solid var(--red-text);
   align-self: flex-start;
   margin-top: 8px;
 }
@@ -414,4 +476,4 @@ body {
 }
 .footer__links { display: flex; gap: 14px; }
 .footer a { color: var(--muted); text-decoration: none; }
-.footer a:hover, .footer__links > *:hover { color: var(--red); }
+.footer a:hover, .footer__links > *:hover { color: var(--red-text); }
