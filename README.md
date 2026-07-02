@@ -36,6 +36,7 @@ date: 2026-07-02
 draft: false
 description: "One or two sentences — this is the excerpt shown in the log list."
 tags: ["drawing"]
+stats: ["4 lessons done", "250 boxes · 1 dragon"]
 ---
 
 Opening paragraph. The title above is already the page heading, so **do not
@@ -61,6 +62,7 @@ Some writing. Link like [this](https://example.com).
 | `draft` | optional | `true` hides it from the built site; preview with `hugo server -D`. |
 | `description` | recommended | The one-line excerpt under the title in the log list. Omit it and the row simply has no excerpt (that's allowed). |
 | `tags` | for the feed | See the tag convention below. |
+| `stats` | when numbers change | 1–2 short lines shown on the pursuit card on enutie.com (e.g. `["4 lessons done", "250 boxes · 1 dragon"]`). The card shows the newest post that has one — omit it and the previous numbers keep showing, so forgetting is harmless. |
 
 ## Following the design — cheat sheet
 
@@ -103,13 +105,25 @@ docs/blog-json-feed.md        # the feed contract (from the design system)
 ## The JSON feed for the main site
 
 The main site's pursuit cards fetch `https://blog.enutie.com/tags/<tag>/index.json`
-and fill in the "latest entry" block. The shape is defined in
-`docs/blog-json-feed.md` and produced by `layouts/_default/term.json`:
+and run on autopilot from it. The shape is defined in `docs/blog-json-feed.md`
+and produced by `layouts/_default/term.json`:
 
 ```json
 { "tag": "Drawing", "count": 5,
-  "posts": [ { "title": "…", "url": "…", "date": "2025-09-02T…" } ] }
+  "posts": [ { "title": "…", "url": "…", "date": "2025-09-02T…",
+               "stats": ["3 lessons done", "250 boxes · 1 dragon"] } ] }
 ```
+
+What each card derives automatically:
+
+- **Latest entry** — the newest post with the tag.
+- **Stats lines** — the `stats` frontmatter of the newest post that has one.
+- **State** — posting recency: post within ~90 days → `active`, older →
+  `resting`, no posts → `queued`. A pursuit can pin its state via
+  `stateOverride` in the main site's `src/data/pursuits.ts` (Warbands does).
+
+So publishing a post is the only maintenance: title, date, state and stats all
+follow from it.
 
 ### The tag convention (important!)
 

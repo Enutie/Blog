@@ -3,6 +3,8 @@ date = '2025-09-02T16:55:48+02:00'
 draft = false
 title = 'Lesson 3 Review'
 tags = ["drawing"]
+# shown on the homepage's Drawing pursuit card — set in your newest post to update
+stats = ['3 lessons done', '250 boxes · 1 dragon']
 +++
 
 ## Lesson 3 Completed!
