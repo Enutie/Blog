@@ -8,6 +8,7 @@ title = 'Enutie Blog'
 [params]
   author = 'Enutie'
   description = 'My creative journey - art, code, and games'
+  images = ['og-image.png']   # default og:image for pages without their own
 
 [menu]
   [[menu.main]]
