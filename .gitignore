@@ -6,3 +6,8 @@
 # OS / editor cruft
 .DS_Store
 Thumbs.db
+
+# Lokale AI-arbejdsnoter (domain model, ADR'er) — bevidst ikke versioneret
+/CONTEXT.md
+/CONTEXT-MAP.md
+/docs/adr/
