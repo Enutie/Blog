@@ -87,7 +87,8 @@ to Markdown like this:
 ```
 hugo.toml                     # config: outputs (JSON feed), taxonomies (tags)
 content/posts/<slug>/index.md # the posts (page bundles with their own images)
-archetypes/default.md         # template for new posts
+archetypes/posts.md           # template for new posts (`hugo new posts/...`)
+archetypes/default.md         # fallback template for non-post content
 layouts/
   _default/baseof.html        # HTML skeleton: fonts, banner, footer
   _default/list.html          # "The log" + tag filters (also tag pages)
