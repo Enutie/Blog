@@ -1,6 +1,7 @@
 baseURL = 'https://blog.enutie.com'
 languageCode = 'en'
 title = 'Enutie Blog'
+enableRobotsTXT = true    # emit /robots.txt from layouts/robots.txt
 
 # No theme — layouts live in /layouts, styling in /assets & /static.
 # See docs/blog-json-feed.md for the homepage feed contract.
