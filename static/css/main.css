@@ -382,6 +382,34 @@ body {
   margin: 4px 0;
 }
 
+.prose table {
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--body);
+  /* wide tables scroll sideways instead of breaking the layout */
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.prose th {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  color: var(--red-text);
+  background: var(--stat-bg);
+  border: 1px solid var(--border);
+  border-bottom: 2px solid var(--red);
+  padding: 8px 14px;
+  white-space: nowrap;
+}
+.prose td {
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+}
+.prose tbody tr:nth-child(even) { background: var(--surface); }
+
 /* optional stat strip authored via a shortcode */
 .statstrip {
   font-family: var(--font-mono);
