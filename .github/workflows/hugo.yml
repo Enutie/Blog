@@ -3,6 +3,10 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: ["main"]
+  schedule:
+    # Onsdage kl. 06:00 UTC (08:00 dansk sommertid): rebuild så
+    # fremtidsdaterede posts udgives på ugens publiceringsdag.
+    - cron: '0 6 * * 3'
   workflow_dispatch:
 
 permissions:
