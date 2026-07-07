@@ -1,0 +1,50 @@
+/* Enutie design system — tokens
+   Light = default. Dark = "lamplit" (warm umber). */
+
+:root {
+  /* color */
+  --bg: #F7F3EA;        /* bone — page background */
+  --surface: #FFFFFF;   /* cards */
+  --text: #2B2118;      /* umber — headings & body */
+  --body: #41382C;      /* body text (slightly lighter than headings) */
+  --muted: #8B8171;     /* metadata, captions */
+  --red: #6E1A1A;       /* oxblood — banner, bands, buttons, links */
+  --red-text: #6E1A1A;  /* interactive text color (changes in dark) */
+  --red-hover: #832222; /* primary button hover */
+  --brass: #B8862F;     /* tiny highlights only — max twice per page */
+  --border: #DDD4C2;
+  --border-faint: #EEE7D8;
+  --deep: #2B2118;      /* darkest fill (hero canvas, shelf shadow) */
+  --slot-line: #CBBFA8; /* dashed empty-slot borders */
+
+  /* type */
+  --font-head: 'Bitter', serif;             /* headings, buttons, banner */
+  --font-body: 'IBM Plex Sans', sans-serif; /* all reading */
+  --font-mono: 'IBM Plex Mono', monospace;  /* dates, tags, code, stats */
+
+  /* spacing scale: 4 8 16 24 40 64 */
+  --s1: 4px; --s2: 8px; --s3: 16px; --s4: 24px; --s5: 40px; --s6: 64px;
+
+  /* shape */
+  --radius: 0;               /* everywhere; no shadows — depth via borders/bands */
+  --band: 4px;               /* red top band on featured cards; banner underline */
+  --prose-width: 680px;
+  --shell-width: 1144px;
+
+  /* layout */
+  --page-x: clamp(20px, 5vw, 48px); /* horizontal page padding */
+}
+
+[data-theme="dark"] {
+  --bg: #211A13;        /* warm umber, not neutral black */
+  --surface: #2B2318;
+  --text: #F0E9DA;
+  --body: #CFC5B0;
+  --muted: #93876F;
+  --red-text: #D4573F;  /* ember — oxblood is too dim as text on dark;
+                           it stays a FILL color (banner, bands, buttons) */
+  --border: #443A2C;
+  --border-faint: #3A3023;
+  --deep: #181310;
+  --slot-line: #5D5142;
+}

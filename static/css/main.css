@@ -1,50 +1,26 @@
-/* Enutie blog — recreated from the design handoff (tokens.css + blog mockups).
-   Light only (the design's blog pages are light; dark is reserved for the
-   games hall). border-radius 0 everywhere, no shadows: depth = borders + bands. */
+/* Enutie blog. Shared tokens come from css/tokens.css (synced from the
+   Enutie/design repo — do not edit that file here). Below are the blog's
+   own extensions on top of them. */
 
 :root {
-  --bg: #F7F3EA;          /* bone — page background */
-  --surface: #FFFFFF;     /* cards */
-  --text: #2B2118;        /* umber — headings */
-  --body: #41382C;        /* body text */
   --sub: #66594A;         /* list intro / sub */
-  --muted: #8B8171;       /* metadata, captions */
-  --red: #6E1A1A;         /* oxblood — banner, bands, buttons, blockquote band (a FILL color) */
-  --red-text: #6E1A1A;    /* interactive text (links, hovers) — becomes ember on dark */
-  --red-hover: #832222;
-  --brass: #B8862F;       /* highlights only */
-  --border: #DDD4C2;
-  --border-faint: #EEE7D8;
   --stat-bg: #EFE8D8;
   --banner-sub: #D9A8A0;  /* mono text on the (always-oxblood) banner */
   --on-red: #F7F3EA;      /* text/logo on the oxblood banner — fixed in both themes */
-  --chip-border: #CBBFA8;
+  --chip-border: var(--slot-line);
   --tag-border: #CFA08A;
 
-  --font-head: 'Bitter', Georgia, serif;
-  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
-
   --shell: 720px;
-  --pad-x: clamp(20px, 5vw, 48px);
+  --pad-x: var(--page-x);
 }
 
-/* "lamplit" dark — warm umber, mirrors the main site's [data-theme=dark].
+/* Blog-specific dark shifts; the shared tokens handle the rest.
    --red / --brass / --banner-sub / --on-red stay put: the banner and bands are
    oxblood/brass in both themes. Only reading surfaces and interactive text shift. */
 [data-theme="dark"] {
-  --bg: #211A13;
-  --surface: #2B2318;
-  --text: #F0E9DA;
-  --body: #CFC5B0;
   --sub: #B4A88E;
-  --muted: #93876F;
-  --red-text: #D4573F;    /* ember — oxblood is too dim as text on dark */
   --red-hover: #E06B54;
-  --border: #443A2C;
-  --border-faint: #3A3023;
   --stat-bg: #322A1D;
-  --chip-border: #5D5142;
   --tag-border: #6E3A30;
 }
 
