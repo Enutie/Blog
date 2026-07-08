@@ -1,12 +1,10 @@
-/* Enutie blog. Shared tokens come from css/tokens.css (synced from the
-   Enutie/design repo — do not edit that file here). Below are the blog's
-   own extensions on top of them. */
+/* Enutie blog. Shared tokens + banner/footer chrome come from the
+   github.com/Enutie/design Hugo module (css/enutie/{tokens,chrome}.css).
+   Below are the blog's own extensions on top of them. */
 
 :root {
   --sub: #66594A;         /* list intro / sub */
   --stat-bg: #EFE8D8;
-  --banner-sub: #D9A8A0;  /* mono text on the (always-oxblood) banner */
-  --on-red: #F7F3EA;      /* text/logo on the oxblood banner — fixed in both themes */
   --chip-border: var(--slot-line);
   --tag-border: #CFA08A;
 
@@ -15,8 +13,7 @@
 }
 
 /* Blog-specific dark shifts; the shared tokens handle the rest.
-   --red / --brass / --banner-sub / --on-red stay put: the banner and bands are
-   oxblood/brass in both themes. Only reading surfaces and interactive text shift. */
+   Only reading surfaces and interactive text shift. */
 [data-theme="dark"] {
   --sub: #B4A88E;
   --red-hover: #E06B54;
@@ -44,87 +41,7 @@ body {
   flex-direction: column;
 }
 
-/* ---------- banner ---------- */
-.banner {
-  background: var(--red);
-  padding: 16px var(--pad-x);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.banner__brand { display: flex; align-items: baseline; gap: 12px; }
-.banner__logo {
-  font-family: var(--font-head);
-  font-size: 24px;
-  font-weight: 800;
-  color: var(--on-red);
-  letter-spacing: .01em;
-  text-decoration: none;
-}
-.banner__tag {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--banner-sub);
-}
-.nav {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  font-family: var(--font-head);
-  font-size: 14px;
-  font-weight: 600;
-}
-.nav a { color: var(--banner-sub); text-decoration: none; }
-.nav a:hover { color: var(--on-red); }
-.nav a.is-active {
-  color: var(--on-red);
-  border-bottom: 3px solid var(--brass);
-  padding-bottom: 2px;
-}
-.brass-band { height: 4px; background: var(--brass); }
-
-/* theme toggle — ported from the main site's SiteBanner switch.
-   Colors are fixed (they sit on the always-oxblood banner in both themes). */
-.theme-switch {
-  position: relative;
-  width: 46px;
-  height: 22px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  flex: none;
-}
-.theme-switch .track {
-  position: absolute;
-  inset: 0;
-  border: 1px solid #9C5750;
-  transition: border-color .15s ease;
-}
-.theme-switch:hover .track { border-color: #D9A8A0; }
-.theme-switch .knob {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 16px;
-  height: 16px;
-  background: var(--brass);
-  transition: transform .2s ease;
-}
-.theme-switch.dark .knob { transform: translateX(24px); }
-.theme-switch .knob::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #2B2118;
-  transform: translate(-50%, -50%);
-}
+/* banner + theme toggle styles come from the design module's chrome.css */
 
 /* ---------- shell ---------- */
 .shell {
@@ -259,7 +176,7 @@ body {
   padding: 2px 8px;
   text-decoration: none;
 }
-.tag-chip:hover { background: var(--red); color: var(--on-red); }
+.tag-chip:hover { background: var(--red); color: #F7F3EA; } /* bone-on-oxblood, fixed in both themes */
 
 /* ---------- prose (rendered markdown body) ---------- */
 .prose {
@@ -466,18 +383,4 @@ body {
 }
 .notfound__link:hover { color: var(--red-hover); border-color: var(--red-hover); }
 
-/* ---------- footer ---------- */
-.footer {
-  border-top: 1px solid var(--border);
-  padding: 16px var(--pad-x);
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-  color: var(--muted);
-}
-.footer__links { display: flex; gap: 14px; }
-.footer a { color: var(--muted); text-decoration: none; }
-.footer a:hover, .footer__links > *:hover { color: var(--red-text); }
+/* footer styles come from the design module's chrome.css */

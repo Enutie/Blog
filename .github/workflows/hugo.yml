@@ -29,6 +29,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Go is needed so Hugo can fetch the github.com/Enutie/design module.
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:

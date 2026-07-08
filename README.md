@@ -1,7 +1,10 @@
 # Enutie Blog — blog.enutie.com
 
 "The log" — the chronological diary side. Built with
-[Hugo](https://gohugo.io) and **no theme**: all design lives in custom layouts.
+[Hugo](https://gohugo.io) and **no theme**: the blog's own design lives in
+custom layouts, while the shared tokens + banner/footer chrome come from the
+[Enutie/design](https://github.com/Enutie/design) repo as a **Hugo module**
+(update with `hugo mod get -u github.com/Enutie/design`; requires Go).
 The main site (enutie.com) pulls
 the "latest entry" per pursuit from a JSON feed served here.
 
@@ -12,8 +15,14 @@ hugo server                             # local preview at http://localhost:1313
 hugo --gc --minify --cleanDestinationDir # build to ./public (clears stale files first)
 ```
 
-Requires **Hugo extended**. Check your version with `hugo version` (developed on
-v0.140).
+Requires **Hugo extended** and **Go** (for the design module). Check your
+version with `hugo version` (developed on v0.140).
+
+To develop against a local checkout of the design repo instead of GitHub:
+
+```bash
+HUGO_MODULE_REPLACEMENTS="github.com/Enutie/design -> /abs/path/to/design" hugo server
+```
 
 New post:
 
@@ -85,20 +94,23 @@ to Markdown like this:
 ## How it fits together
 
 ```
-hugo.toml                     # config: outputs (JSON feed), taxonomies (tags)
+hugo.toml                     # config: outputs (JSON feed), taxonomies (tags),
+                              # + the Enutie/design module import
+go.mod                        # Hugo-module identity (needed to import modules)
 content/posts/<slug>/index.md # the posts (page bundles with their own images)
 archetypes/posts.md           # template for new posts (`hugo new posts/...`)
 archetypes/default.md         # fallback template for non-post content
 layouts/
-  _default/baseof.html        # HTML skeleton: fonts, banner, footer
+  _default/baseof.html        # HTML skeleton: fonts + the module's theme-head,
+                              # banner and footer partials (partials/enutie/…)
   _default/list.html          # "The log" + tag filters (also tag pages)
   _default/single.html        # single post: header, prose, older/newer nav
   _default/term.json          # the JSON feed for the main site (see below)
   index.html                  # front page = the log
-  partials/{banner,footer}.html
   shortcodes/statstrip.html   # honest-numbers stat strip
 static/
-  css/main.css                # design tokens + all components (light, radius 0)
+  css/main.css                # the blog's own components on top of the module's
+                              # tokens.css + chrome.css (light, radius 0)
   favicon.svg + pngs          # the Enutie favicon
 docs/blog-json-feed.md        # the feed contract (from the design system)
 ```

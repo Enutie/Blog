@@ -6,6 +6,13 @@ enableRobotsTXT = true    # emit /robots.txt from layouts/robots.txt
 # No theme — layouts live in /layouts, styling in /assets & /static.
 # See docs/blog-json-feed.md for the homepage feed contract.
 
+# Shared tokens + site chrome come in as a Hugo module from the design repo
+# (mounted under assets/{css,js}/enutie and layouts/partials/enutie).
+# Update with: hugo mod get -u github.com/Enutie/design
+[module]
+  [[module.imports]]
+    path = "github.com/Enutie/design"
+
 [params]
   author = 'Enutie'
   description = 'My creative journey - art, code, and games'

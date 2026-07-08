@@ -5,20 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#6E1A1A">
 
-  {{- /* Set the theme before first paint to avoid a flash. An explicit stored
-         choice wins; otherwise follow the visitor's OS colour-scheme. Shares the
-         'enutie-theme' key with the main site (note: localStorage is per-origin,
-         so the choice doesn't sync across enutie.com ↔ blog.enutie.com). */ -}}
-  <script>
-    (function () {
-      try {
-        var stored = localStorage.getItem('enutie-theme')
-        var sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-        if ((stored || sys) === 'dark') document.documentElement.dataset.theme = 'dark'
-      } catch (e) {}
-    })()
-  </script>
-  <script src="{{ "js/theme.js" | relURL }}" defer></script>
+  {{- /* No-flash theme init + toggle wiring, both from the design module.
+         Shares the 'enutie-theme' key with the main site (note: localStorage is
+         per-origin, so the choice doesn't sync across enutie.com ↔ blog.enutie.com). */ -}}
+  {{ partial "enutie/theme-head.html" . }}
+  {{ with resources.Get "js/enutie/theme.js" }}<script src="{{ .RelPermalink }}" defer></script>{{ end }}
 
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
@@ -31,7 +22,9 @@
   <link rel="preload" href="{{ "fonts/bitter.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ "fonts/ibm-plex-sans.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "css/tokens.css" | relURL }}">
+  {{- /* tokens + banner/footer chrome from the design module */}}
+  {{ with resources.Get "css/enutie/tokens.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+  {{ with resources.Get "css/enutie/chrome.css" }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -42,11 +35,14 @@
 </head>
 <body>
   <div class="page">
-    {{ partial "banner.html" . }}
+    {{ partial "enutie/site-banner.html" (dict "suffix" "/ the log" "active" "posts") }}
     <main class="shell">
       {{ block "main" . }}{{ end }}
     </main>
-    {{ partial "footer.html" . }}
+    {{- $links := slice -}}
+    {{- with .Site.Home.OutputFormats.Get "rss" }}{{ $links = $links | append (dict "label" "rss" "href" .Permalink) }}{{ end -}}
+    {{- $links = $links | append (dict "label" "github" "href" "https://github.com/Enutie") (dict "label" "enutie.com" "href" "https://enutie.com") -}}
+    {{ partial "enutie/site-footer.html" (dict "links" $links) }}
   </div>
 </body>
 </html>
