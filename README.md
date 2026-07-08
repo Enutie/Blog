@@ -153,7 +153,21 @@ static content (no error, by design). Keep the five slugs in sync. Other tags
 
 ## Deploy
 
-Push to `main` → GitHub Actions (`.github/workflows/hugo.yml`) builds with
-`hugo --minify` and deploys to GitHub Pages. `public/` is build output and is
-**not** committed (see `.gitignore`).
+Push to `main` → GitHub Actions (`.github/workflows/hugo.yml`) sets up Go
+(for the design module), builds with `hugo --minify` and deploys to GitHub
+Pages. `public/` is build output and is **not** committed (see `.gitignore`).
+
+## Picking up design-system changes
+
+`go.mod`/`go.sum` pin the exact version of the design module, so a push to
+Enutie/design does **nothing** here until you bump the pin:
+
+```bash
+hugo mod get -u github.com/Enutie/design   # bump the pin
+hugo server                                # eyeball it
+git add go.mod go.sum && git commit -m "Bump design module" && git push
+```
+
+Forgetting the commit means CI keeps building the old design — the pin is the
+whole point (no surprise restyles on unrelated deploys).
 
